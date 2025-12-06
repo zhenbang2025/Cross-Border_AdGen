@@ -15,18 +15,28 @@
 
 ## Result visualization
 ### Core 1 Input & Output (3D Display)
-| Input: Product Image | Output Poster | Output 3D Asset: Multi-View Renders | Output Video |
-|----------------------|---------------|-------------------------------------|--------------|
-|<img src="example/input/skirt.png" alt="Input Skirt" width="120" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;">| <img src="example/output/model1.png" alt="Output Poster" width="70" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;"> <img src="example/output/model2.png" alt="Output Poster" width="70" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;"> <img src="example/output/model3.png" alt="Output Poster" width="70" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;"> |[📱 Launch Local 3D Viewer](3d_viewer.html)<br>[GLB Lightweight Model](example/glb_files/mdoel1.glb)<br> [📱 Launch Local 3D Viewer](3d_viewer.html)<br>[GLB Lightweight Model](example/glb_files/mdoel2.glb)<br> [📱 Launch Local 3D Viewer](3d_viewer.html)<br>[GLB Lightweight Model](example/glb_files/mdoel3.glb)<br>| <video width="120" controls autoplay loop muted style="display:block;margin:0 auto;">
-  <source src="example/output/video/model1.mp4" type="video/mp4"> <video width="120" controls autoplay loop muted style="display:block;margin:0 auto;">
-  <source src="example/output/video/model2.mp4" type="video/mp4"> <video width="120" controls autoplay loop muted style="display:block;margin:0 auto;">
-  <source src="example/output/video/model3.mp4" type="video/mp4">| 
+| Input: Product Image | Output Poster | Output 3D Asset: Multi-View Renders |
+|----------------------|---------------|-------------------------------------|
+|<img src="example/input/skirt.png" alt="Input Skirt" width="120" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;">| <img src="example/output/model1.png" alt="Output Poster" width="70" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;"> <img src="example/output/model2.png" alt="Output Poster" width="70" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;"> <img src="example/output/model3.png" alt="Output Poster" width="70" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;"> |[📱 Launch Local 3D Viewer](3d_viewer.html)<br>[GLB Lightweight Model](example/glb_files/mdoel1.glb)<br> [📱 Launch Local 3D Viewer](3d_viewer.html)<br>[GLB Lightweight Model](example/glb_files/mdoel2.glb)<br> [📱 Launch Local 3D Viewer](3d_viewer.html)<br>[GLB Lightweight Model](example/glb_files/mdoel3.glb)<br>| 
+| Output Video 1 | Output Video 2 | Output Video 3 
+
+<video width="120" controls autoplay loop muted>
+  <source src="example/output/video/model1.mp4" type="video/mp4">
+</video>  ｜ <video width="120" controls autoplay loop muted>
+  <source src="example/output/video/model2.mp4" type="video/mp4">
+</video> |  <video width="120" controls autoplay loop muted>
+  <source src="example/output/video/model3.mp4" type="video/mp4">
+</video> |
 
 ### Core 2 Input & Output (3D Display)
 | Input: Product Image | Output 1: Interactive LGB 3D Model | Output 2: View_1 Render |
 |----------------------|------------------------------------|-----------------------------|
 | ![Product Input](example/input/labubu.jpg)<br><small>Resolution: 1080×1080<br>Format: JPG/PNG</small> | [📱 Launch Local 3D Viewer](3d_viewer.html)<br>[GLB Lightweight Model](example/glb_files/labubu.glb)<br>| ![Front View](example/output/labubu_3d_1.png)<br><small>2048×2048 PBR Render</small> |
 | ![Product Input](example/input/snaker.jpeg)<br><small>Resolution: 1080×1080<br>Format: JPG/PNG</small> | [📱 Launch Local 3D Viewer](3d_viewer.html)<br>[GLB Lightweight Model](example/glb_files/snaker.glb)<br>| ![Front View](example/output/snaker.png)<br><small>2048×2048 PBR Render</small> |
+
+
+
+
 
 
 
