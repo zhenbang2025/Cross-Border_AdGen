@@ -59,16 +59,20 @@ python pipeline_slogan_poster.py \
 
 #### **For pipeline_3d_display.py**
 Configuration environment content reference:(https://huggingface.co/tencent/Hunyuan3D-2)
+```bash
 python pipeline_hunyuan3d.py \
     --front-image "path/front.png" \
     --left-image "path/left.png" \
     --back-image "path/back.png"
+```
 
 The easist way to try in the official website: (https://3d.hunyuan.tencent.com/)
 
 #### **For video generation**
 Configuration environment content reference:(https://huggingface.co/tencent/Hunyuan3D-2)
+```bash
 sh pipeline_itov.sh
+```
 The easist way to try in the official website: https://hunyuan.tencent.com/video/zh?tabIndex=0
 ## 🔗 Citation
 Some of the technical ideas in this project are referenced or based on the following series of works. Related research results can be found at:
