@@ -14,7 +14,7 @@
 
 
 ## Result visualization
-### Core 1 Input & Output (3D Display)
+### Core 1 Input & Output (Generate video using Hunyuan 3D)
 | Input: Product Image | Output Poster | Output 3D Asset: Multi-View Renders |
 |----------------------|---------------|-------------------------------------|
 |<img src="example/input/skirt.png" alt="Input Skirt" width="120" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;">| <img src="example/output/model1.png" alt="Output Poster" width="70" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;"> <img src="example/output/model2.png" alt="Output Poster" width="70" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;"> <img src="example/output/model3.png" alt="Output Poster" width="70" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;"> |[📱 Launch Local 3D Viewer](3d_viewer.html)<br>[GLB Lightweight Model](example/glb_files/model1.glb)<br> <br>[GLB Lightweight Model](example/glb_files/model2.glb)<br> <br>[GLB Lightweight Model](example/glb_files/model3.glb)<br>| 
@@ -34,11 +34,16 @@
 | ![Product Input](example/input/labubu.jpg)<br>| <br>[GLB Lightweight Model](example/glb_files/labubu.glb)<br>| ![Front View](example/output/labubu_3d_1.png)|
 | ![Product Input](example/input/snaker.jpeg)<br>| <br>[GLB Lightweight Model](example/glb_files/snaker.glb)<br>| ![Front View](example/output/snaker.png) |
 
+### Core 2 Input & Output (slogans and posters)
+| Input: Product Image | Slogan | Poster |
+|----------------------|------------------------------------|-----------------------------|
+| ![Product Input](example/input/snaker.jpeg)<br>| <span style="color: #87CEEB;">Better is Temporary</span>| ![Product Input](example/slogan_poster/prompt1/4.jpg)<br>|
+| ![Product Input](example/input/snaker.jpeg)<br>| <span style="color: #87CEEB;">Innovation Challenges Tradition</span>| ![Product Input](example/slogan_poster/prompt2/4.jpg)<br>|
+| ![Product Input](example/input/labubu.jpg)<br>| <span style="color: #87CEEB;">Let's go cause trouble together</span>| ![Product Input](example/slogan_poster/prompt3/4.jpg)<br>|
+
 
 ## 🔗 Citation
-## 引用说明
-
-Some of the technical ideas in this project are referenced or based on the series of works. Related research results can be found at
+Some of the technical ideas in this project are referenced or based on the following series of works. Related research results can be found at:
 
 ```bibtex
 @misc{lai2025hunyuan3d25highfidelity3d,
@@ -77,4 +82,31 @@ Some of the technical ideas in this project are referenced or based on the serie
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2503.16302}, 
+}
+
+@misc{luo2023msdiffusion,
+      title={MS-Diffusion: Multi-Scale Diffusion Models for 3D Point Cloud Generation},
+      author={Chenxi Luo and Ziwei Liu and Xiao Yang},
+      year={2023},
+      eprint={2303.08133},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@misc{deepseek2024v3,
+      title={DeepSeek-V3: Scaling Open Multimodal Models with High-Quality Data},
+      author={DeepSeek Team},
+      year={2024},
+      eprint={2406.04692},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@misc{qwen252025tencent,
+      title={Qwen2.5: Improved Multimodal Understanding and Generation},
+      author={Tencent AI Lab},
+      year={2025},
+      eprint={2504.11365},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }

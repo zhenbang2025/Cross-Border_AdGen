@@ -1,0 +1,3 @@
+"slogan=\"Innovation Challenges Tradition\", Mecha Sci-Fi style, dark futuristic cityscape, the shoe integrated into deconstructed typography with sharp angles, neon accents and metallic textures, metallic blues and silvers with vibrant magenta glow, edgy and progressive mood, masterpiece, best quality, 8k."
+
+slogan = Innovation Challenges Tradition
