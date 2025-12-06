@@ -31,8 +31,8 @@
 ### Core 2 Input & Output (3D Display)
 | Input: Product Image | Output 1: Interactive LGB 3D Model | Output 2: View_1 Render |
 |----------------------|------------------------------------|-----------------------------|
-| ![Product Input](example/input/labubu.jpg)<br><small>Resolution: 1080×1080<br>Format: JPG/PNG</small> | [📱 Launch Local 3D Viewer](3d_viewer.html)<br>[GLB Lightweight Model](example/glb_files/labubu.glb)<br>| ![Front View](example/output/labubu_3d_1.png)<br><small>2048×2048 PBR Render</small> |
-| ![Product Input](example/input/snaker.jpeg)<br><small>Resolution: 1080×1080<br>Format: JPG/PNG</small> | [📱 Launch Local 3D Viewer](3d_viewer.html)<br>[GLB Lightweight Model](example/glb_files/snaker.glb)<br>| ![Front View](example/output/snaker.png)<br><small>2048×2048 PBR Render</small> |
+| ![Product Input](example/input/labubu.jpg)<br><small>Resolution: 1080×1080<br>Format: JPG/PNG</small> | [📱 Launch Local 3D Viewer](3d_viewer.html)<br>[GLB Lightweight Model](example/glb_files/labubu.glb)<br>| ![Front View](example/output/labubu_3d_1.png)|
+| ![Product Input](example/input/snaker.jpeg)<br><small>Resolution: 1080×1080<br>Format: JPG/PNG</small> | [📱 Launch Local 3D Viewer](3d_viewer.html)<br>[GLB Lightweight Model](example/glb_files/snaker.glb)<br>| ![Front View](example/output/snaker.png) |
 
 
 
