@@ -31,8 +31,8 @@
 ### Core 2 Input & Output (3D Display)
 | Input: Product Image | Output 1: Interactive LGB 3D Model | Output 2: View_1 Render |
 |----------------------|------------------------------------|-----------------------------|
-| <img src="example/input/labubu.jpg" width="200"><br>| <br>[GLB Lightweight Model](example/glb_files/labubu.glb)<br>| ![Front View](example/output/labubu_3d_1.png)|
-| <img src="example/input/snaker.jpeg" width="200"><br>| <br>[GLB Lightweight Model](example/glb_files/snaker.glb)<br>| ![Front View](example/output/snaker.png) |
+| <img src="example/input/labubu.jpg" width="200"><br>| <br>[GLB Lightweight Model](example/glb_files/labubu.glb)<br>| <img src="example/output/labubu_3d_1.png" width="100"><br>|
+| <img src="example/input/snaker.jpeg" width="200"><br>| <br>[GLB Lightweight Model](example/glb_files/snaker.glb)<br>| <img src="example/output/snaker.png" width="100"><br> |
 
 ### Core 2 Input & Output (slogans and posters)
 | Input: Product Image | Slogan | Poster |
