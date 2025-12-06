@@ -1,0 +1,5 @@
+# ninja log v7
+6	41	1763881312778591000	/home/rjiangas/Hunyuan3D-2/hy3dgen/texgen/custom_rasterizer/build/temp.linux-x86_64-cpython-311/lib/custom_rasterizer_kernel/rasterizer_gpu.o	b610ccf9619d909b
+8	41	1763883381982945000	/home/rjiangas/Hunyuan3D-2/hy3dgen/texgen/custom_rasterizer/build/temp.linux-x86_64-cpython-311/lib/custom_rasterizer_kernel/rasterizer_gpu.o	b610ccf9619d909b
+6	39	1763883790534426000	/home/rjiangas/Hunyuan3D-2/hy3dgen/texgen/custom_rasterizer/build/temp.linux-x86_64-cpython-311/lib/custom_rasterizer_kernel/rasterizer_gpu.o	b610ccf9619d909b
+5	36	1763884328423006000	/home/rjiangas/Hunyuan3D-2/hy3dgen/texgen/custom_rasterizer/build/temp.linux-x86_64-cpython-311/lib/custom_rasterizer_kernel/rasterizer_gpu.o	b610ccf9619d909b

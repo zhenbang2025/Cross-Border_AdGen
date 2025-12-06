@@ -42,6 +42,34 @@
 |  <img src="example/input/labubu.jpg" width="200"><br>| <span style="color: #87CEEB;">Let's go cause trouble together</span>| <img src="example/slogan_poster/prompt3/4.jpg" width="200"><br>|
 
 
+
+### Quick Start
+
+#### **For pipeline_slogan_poster.py**
+```bash
+pip install -r requirements.txt
+python pipeline_slogan_poster.py \
+    --input-image-path "example/shirt.jpg" \
+    --output-directory "./posters" \
+    --brand-tone "Casual, Friendly" \
+    --platform "Facebook Post" \
+    --target-audience "Young Adults" \
+    --slogan-word-count "4-8 words"
+```
+
+#### **For pipeline_3d_display.py**
+Configuration environment content reference:(https://huggingface.co/tencent/Hunyuan3D-2)
+python pipeline_hunyuan3d.py \
+    --front-image "path/front.png" \
+    --left-image "path/left.png" \
+    --back-image "path/back.png"
+
+The easist way to try in the official website: (https://3d.hunyuan.tencent.com/)
+
+#### **For video generation**
+Configuration environment content reference:(https://huggingface.co/tencent/Hunyuan3D-2)
+sh pipeline_itov.sh
+The easist way to try in the official website: https://hunyuan.tencent.com/video/zh?tabIndex=0
 ## 🔗 Citation
 Some of the technical ideas in this project are referenced or based on the following series of works. Related research results can be found at:
 

@@ -1,6 +1,7 @@
 import os
 import torch
 import gc
+import argparse
 from typing import Dict, Any, List
 
 # --- 1. Import Custom Modules ---
@@ -146,41 +147,59 @@ class AutoPosterPipeline:
 
 
 if __name__ == "__main__":
-    # ---------------- Configuration ----------------
-    # Update these paths to match your local environment
-    CONFIG = {
-        # 1. VLM (Qwen) Configuration
-        "vlm_model_path": "Qwen/Qwen2.5-VL-3B-Instruct",
-        
-        # 2. LLM (OpenAI/DeepSeek) Configuration
-        "llm_base_url": "https://router.huggingface.co/v1",
-        "llm_api_key": os.getenv("HF_API_KEY", "your_api_key_here"),
-        "llm_model_name": "deepseek-ai/DeepSeek-V3:novita",
-        
-        # 3. MS-Diffusion Configuration
-        "sd_base_path": "/home/rjiangas/cv_project/MS-Diffusion/models/tabilityai/stable-diffusion-xl-base-1.0",
-        "clip_path": "/home/rjiangas/cv_project/MS-Diffusion/models/laion/CLIP-ViT-bigG-14-laion2B-39B-b160k",
-        "ms_adapter_path": "/home/rjiangas/cv_project/MS-Diffusion/models/doge1516/MS-Diffusion/ms_adapter.bin"
-    }
-
-    # ---------------- Input Data ----------------
-    # The filename serves as the 'trigger word' for the object (e.g., sneaker.jpeg -> 'sneaker')
-    input_image_path = "example/sneaker.jpeg" 
-    output_directory = "./final_posters"
-
-    # Define creative constraints
-    user_requirements = {
-        "brand_tone": "High-end, Energetic",
-        "platform": "Instagram Post",
-        "target_audience": "Gen Z",
-        "slogan_word_count": "3-6 words"
-    }
-
-    # ---------------- Run Pipeline ----------------
-    pipeline = AutoPosterPipeline(CONFIG)
+    parser = argparse.ArgumentParser(description='Auto Poster Pipeline')
     
+    parser.add_argument('--vlm-model-path', type=str, default="Qwen/Qwen2.5-VL-3B-Instruct",
+                        help='Path to the VLM model')
+    parser.add_argument('--llm-base-url', type=str, default="https://router.huggingface.co/v1",
+                        help='Base URL for the LLM API')
+    parser.add_argument('--llm-api-key', type=str, default=os.getenv("HF_API_KEY", "your_api_key_here"),
+                        help='API key for the LLM')
+    parser.add_argument('--llm-model-name', type=str, default="deepseek-ai/DeepSeek-V3:novita",
+                        help='Name of the LLM model')
+    parser.add_argument('--sd-base-path', type=str, default="tabilityai/stable-diffusion-xl-base-1.0",
+                        help='Path to the SD base model')
+    parser.add_argument('--clip-path', type=str, default="laion/CLIP-ViT-bigG-14-laion2B-39B-b160k",
+                        help='Path to the CLIP model')
+    parser.add_argument('--ms-adapter-path', type=str, default="doge1516/MS-Diffusion/ms_adapter.bin",
+                        help='Path to the MS adapter checkpoint')
+    
+    parser.add_argument('--input-image-path', type=str, default="example/sneaker.jpeg",
+                        help='Path to the input image')
+    parser.add_argument('--output-directory', type=str, default="./final_posters",
+                        help='Directory to save the output posters')
+    
+    parser.add_argument('--brand-tone', type=str, default="High-end, Energetic",
+                        help='Brand tone for the slogan')
+    parser.add_argument('--platform', type=str, default="Instagram Post",
+                        help='Platform for the poster')
+    parser.add_argument('--target-audience', type=str, default="Gen Z",
+                        help='Target audience for the poster')
+    parser.add_argument('--slogan-word-count', type=str, default="3-6 words",
+                        help='Word count constraint for the slogan')
+    
+    args = parser.parse_args()
+
+    CONFIG = {
+        "vlm_model_path": args.vlm_model_path,
+        "llm_base_url": args.llm_base_url,
+        "llm_api_key": args.llm_api_key,
+        "llm_model_name": args.llm_model_name,
+        "sd_base_path": args.sd_base_path,
+        "clip_path": args.clip_path,
+        "ms_adapter_path": args.ms_adapter_path
+    }
+
+    user_requirements = {
+        "brand_tone": args.brand_tone,
+        "platform": args.platform,
+        "target_audience": args.target_audience,
+        "slogan_word_count": args.slogan_word_count
+    }
+
+    pipeline = AutoPosterPipeline(CONFIG)
     pipeline.run(
-        image_path=input_image_path,
+        image_path=args.input_image_path,
         user_requirements=user_requirements,
-        save_dir=output_directory
+        save_dir=args.output_directory
     )
