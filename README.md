@@ -31,15 +31,15 @@
 ### Core 2 Input & Output (3D Display)
 | Input: Product Image | Output 1: Interactive LGB 3D Model | Output 2: View_1 Render |
 |----------------------|------------------------------------|-----------------------------|
-| ![Product Input](example/input/labubu.jpg)<br>| <br>[GLB Lightweight Model](example/glb_files/labubu.glb)<br>| ![Front View](example/output/labubu_3d_1.png)|
-| ![Product Input](example/input/snaker.jpeg)<br>| <br>[GLB Lightweight Model](example/glb_files/snaker.glb)<br>| ![Front View](example/output/snaker.png) |
+| <img src="example/input/labubu.jpg" width="200"><br>| <br>[GLB Lightweight Model](example/glb_files/labubu.glb)<br>| ![Front View](example/output/labubu_3d_1.png)|
+| <img src="example/input/snaker.jpeg" width="200"><br>| <br>[GLB Lightweight Model](example/glb_files/snaker.glb)<br>| ![Front View](example/output/snaker.png) |
 
 ### Core 2 Input & Output (slogans and posters)
 | Input: Product Image | Slogan | Poster |
 |----------------------|------------------------------------|-----------------------------|
-| ![Product Input](example/input/snaker.jpeg)<br>| <span style="color: #87CEEB;">Better is Temporary</span>| ![Product Input](example/slogan_poster/prompt1/4.jpg)<br>|
-| ![Product Input](example/input/snaker.jpeg)<br>| <span style="color: #87CEEB;">Innovation Challenges Tradition</span>| ![Product Input](example/slogan_poster/prompt2/4.jpg)<br>|
-| ![Product Input](example/input/labubu.jpg)<br>| <span style="color: #87CEEB;">Let's go cause trouble together</span>| ![Product Input](example/slogan_poster/prompt3/4.jpg)<br>|
+| <img src="example/input/snaker.jpeg" width="200"><br>| <span style="color: #87CEEB;">Better is Temporary</span>| <img src="example/slogan_poster/prompt1/4.jpg" width="200"><br>|
+| <img src="example/input/snaker.jpeg" width="200"><br>| <span style="color: #87CEEB;">Innovation Challenges Tradition</span>| <img src="example/slogan_poster/prompt2/4.jpg" width="200"><br>|
+|  <img src="example/input/labubu.jpg" width="200"><br>| <span style="color: #87CEEB;">Let's go cause trouble together</span>| <img src="example/slogan_poster/prompt3/4.jpg" width="200"><br>|
 
 
 ## 🔗 Citation
