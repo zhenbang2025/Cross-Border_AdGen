@@ -20,7 +20,7 @@
 |<img src="example/input/skirt.png" alt="Input Skirt" width="120" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;">| <img src="example/output/model1.png" alt="Output Poster" width="70" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;"> <img src="example/output/model2.png" alt="Output Poster" width="70" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;"> <img src="example/output/model3.png" alt="Output Poster" width="70" style="display:block;margin:0 auto;" /><br><small style="text-align:center;display:block;"> |[📱 Launch Local 3D Viewer](3d_viewer.html)<br>[GLB Lightweight Model](example/glb_files/model1.glb)<br> <br>[GLB Lightweight Model](example/glb_files/model2.glb)<br> <br>[GLB Lightweight Model](example/glb_files/model3.glb)<br>| 
 | Output Video 1 | Output Video 2 | Output Video 3 
 
-<video width="120" controls autoplay loop muted> <source src="example/output/video/model1.mp4" type="video/mp4"> </video> | <video width="120" controls autoplay loop muted> <source src="example/output/video/model2.mp4" type="video/mp4"> </video> | <video width="120" controls autoplay loop muted> <source src="example/output/video/model3.mp4" type="video/mp4"> </video> |
+![Video1](example/output/video/model1.gif) | ![Video2](example/output/video/model2.gif) | ![Video3](example/output/video/model3.gif) |
 
 ### Core 2 Input & Output (3D Display)
 | Input: Product Image | Output 1: Interactive LGB 3D Model | Output 2: View_1 Render |
